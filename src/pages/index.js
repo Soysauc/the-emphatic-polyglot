@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -11,8 +10,8 @@ export default ({ data }) => {
     <Layout>
       <Seo title="Home" />
       <div>
-        <h1>Jeremy's Thoughts</h1>
-        <h4>{data.allMarkdownRemark.totalCount}</h4>
+        <title>Jeremy's Thoughts</title>
+        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => {
           ;<div key={node.id}>
             <span>
