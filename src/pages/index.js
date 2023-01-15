@@ -11,7 +11,7 @@ const BlogTitle = styled.h3`
   margin-bottom: 20px;
 
   &:hover {
-    color: #1dcaff;
+    color: #777b7e;
   }
 `
 
@@ -28,7 +28,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <div>
-        <Title>Thoughts by Jeremy</Title>
+        <Title>Recent Posts:</Title>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <BlogBody key={node.id}>
