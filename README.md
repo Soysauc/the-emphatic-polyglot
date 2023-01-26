@@ -13,4 +13,4 @@ I expect to include other posts (I have a writing list) and then deply it potent
 
 #### Deploy
 
-npm run deploy
+npm run develop
